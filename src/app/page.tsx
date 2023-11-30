@@ -1,9 +1,14 @@
-import Image from 'next/image'
+'use client';
+
+import Slider from './ui/Components/Slider';
+import Navbar from './ui/navbar/navbar'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <p></p>
-    </main>
+    <>
+      <Navbar></Navbar>    
+      <Slider></Slider>
+    </>
+
   )
 }
