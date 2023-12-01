@@ -1,6 +1,20 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { monserrat } from './ui/fonts'
+import Navbar from './ui/navbar/navbar'
+
+import "./ui/fade.css"
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import 'swiper/css/effect-fade'; // Agregué el estilo de fade específicamente
+
+import 'swiper/css/autoplay';
+import 'swiper/css/effect-fade';
+import 'swiper/css/grid';
 
 export default function RootLayout({
   children,

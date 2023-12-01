@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .rotate-neg-45 {
+      transform: rotate(-45deg);
+    }
+  
+    .rotate-neg-90 {
+      transform: rotate(-90deg);
+    }
+  }
