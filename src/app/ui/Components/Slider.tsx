@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, EffectFade, Pagination, Autoplay } from 'swiper/modules';
+import { Navigation, EffectFade, Autoplay } from 'swiper/modules';
 
 const content:any = [
   {
