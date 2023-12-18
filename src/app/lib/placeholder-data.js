@@ -2,7 +2,7 @@ const products = [
     {
       id: "",
       name: "Pastel Navideño",
-      description: "Delicioso pastel decorado con motivos navideños. Perfecto para celebrar las fiestas.",
+      description: " Delicioso pastel decorado con motivos navideños. Perfecto para celebrar las fiestas.",
       image_url: "https://ejemplo.com/imagen_pastel_navideno.jpg",
       priceUnit: 29.99
     },
@@ -35,3 +35,8 @@ const products = [
       priceUnit: 19.99
     }
   ];
+
+  module.exports = {
+    products
+  };
+  

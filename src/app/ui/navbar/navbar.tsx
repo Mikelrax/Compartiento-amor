@@ -1,6 +1,6 @@
 'use client';
 
-import { Fragment, useState } from 'react'
+import { Fragment, useState } from 'react';
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
   ArrowPathIcon,
@@ -32,7 +32,7 @@ function classNames(...classes:any) {
 }
 
 export default function Navbar() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = typeof window !== 'undefined' ? useState(false) : [false, () => {}];
 
   return (
     <header className="bg-white">

@@ -1,11 +1,17 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
 .snow-container {
     padding: 0;
     margin: 0;
     width: 100vw;
-    height: 100vh;
-    position: relative;
+    min-height: 100vh; /* Ajusta la altura al 100% del viewport height */
+    max-height: 800vh;
+    position: absolute;
     overflow: hidden;
     background: linear-gradient(rgb(168, 200, 233), rgb(83, 134, 185));
+
 }
 
 .snowflake {
