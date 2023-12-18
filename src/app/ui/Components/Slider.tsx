@@ -6,22 +6,22 @@ import { Navigation, EffectFade, Autoplay } from 'swiper/modules';
 
 const content:any = [
   {
-    img: 'https://images.pexels.com/photos/7982749/pexels-photo-7982749.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    date: '30 de diciembre',
-    header: 'Titulo01',
-    info: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid enim quidem ipsum quos corrupti totam ullam nam, amet, quam dolores saepe assumenda adipisci tenetur, sunt minima et porro unde excepturi?',
+    img: 'https://i.imgur.com/Up5d0YH.jpg',
+    date: '😊',
+    header: 'Feliz Navidad!',
+    info: "En esta época tan especial, D'Liriz quiere desearte una Navidad llena de alegría, amor y momentos inolvidables. Que el espíritu navideño llene tu hogar y tu corazón, y que compartas momentos deliciosos con tus seres queridos.",
   },
   {
-    img: 'https://images.pexels.com/photos/7982534/pexels-photo-7982534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    date: '30 de diciembre',
-    header: 'Titulo02',
-    info: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid enim quidem ipsum quos corrupti totam ullam nam, amet, quam dolores saepe assumenda adipisci tenetur, sunt minima et porro unde excepturi?',
+    img: 'https://i.imgur.com/pWFnBIW.png',
+    date: '😊',
+    header: 'Felices Fiestas',
+    info: 'Agradecemos tu confianza y te deseamos un próspero Año Nuevo lleno de éxitos y nuevas experiencias culinarias. ¡Que esta temporada festiva esté llena de sabores y emociones extraordinarias!',
   },
   {
-    img: 'https://images.pexels.com/photos/7982425/pexels-photo-7982425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    date: '30 de diciembre',
-    header: 'Titulo03',
-    info: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid enim quidem ipsum quos corrupti totam ullam nam, amet, quam dolores saepe assumenda adipisci tenetur, sunt minima et porro unde excepturi?',
+    img: 'https://i.imgur.com/pWFnBIW.png',
+    date: '😊',
+    header: 'Felices Fiestas',
+    info: 'Agradecemos tu confianza y te deseamos un próspero Año Nuevo lleno de éxitos y nuevas experiencias culinarias. ¡Que esta temporada festiva esté llena de sabores y emociones extraordinarias!',
   },
 ];
 
@@ -59,9 +59,11 @@ export default function Fade() {
                     <h1 className="font-bold mt-10 ">{p.header}</h1>
                     <p>{p.info}</p>
                   </div>
+                  <a href='/catalog'>
                   <button className="btn bg-red-500 p-[1rem_1.5rem] font-bold text-white mt-5 ">
-                    More
+                    Más
                   </button>
+                  </a>
                 </div>
               </SwiperSlide>
             );

@@ -1,16 +1,21 @@
+import { dancing_script } from "../fonts"
+
 export default function Meet_us() {
     return (
         <>
             <div className="min-h-screen flex items-center justify-center">
                 <div className="max-w-4xl mx-auto p-8">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        <div className="md:col-span-1 pt-12 ">
-                            <img src="https://source.unsplash.com/random/800x600" alt="Product Image" className="w-full h-auto rounded-lg shadow-md" />
+                        <div className="md:col-span-1 pt-14 ">
+                            <img src="https://i.imgur.com/6lREdMf.jpg" alt="Product Image" className="w-full h-auto rounded-lg shadow-md pt-8" />
                         </div>
                         <div className="md:col-span-2 align-middle">
-                            <h1 className="text-4xl font-bold mb-3">Title</h1>
-                            <p className="text-lg">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <h3 className={`${dancing_script.className} text-6xl font-bold mb-3 p-5`}>D'Liriz</h3>
+                            <p className='text-lg pl-8'>
+                            D'Liriz es una exquisita página especializada en ofrecer bocaditos temáticos que deleitan los sentidos y 
+                            llevan la experiencia gastronómica a un nivel superior. Con una dedicación inigualable a la creatividad y 
+                            la calidad, D'Liriz se ha convertido en el destino preferido para aquellos que buscan deleitar sus paladares 
+                            con auténticas obras maestras culinarias.
                             </p>
                         </div>
                     </div>

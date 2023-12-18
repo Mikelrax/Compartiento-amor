@@ -2,7 +2,8 @@ import React, { Suspense } from 'react';
 import { ProductResponse } from '@/app/lib/definitions';
 import { updateCartQuantity } from '@/app/lib/shoppingCart/ShoppingCart';
 import { CardSkeleton } from '../skeletons';
-const Card = ({
+import { fetchProducts } from '@/app/lib/utils';
+const Card = ( {
   UUID,
   name,
   description,
@@ -37,7 +38,7 @@ const Card = ({
         </div>
         <div className='mb-4'>
           <img
-            src="https://loremflickr.com/400/400"
+            src={image_url}
             alt="Placeholder Image"
             className="rounded mx-auto"
           />
@@ -48,13 +49,6 @@ const Card = ({
     </Suspense>
   );
 };
+   
 
 export default Card;
-
-/*         
- <button
-            className="px-4 py-2 bg-green-600 text-white hover:bg-green-700 transition duration-300 ease-in-out"
-            onClick={() => updateCartQuantity(UUID, priceUnit, 1)}>
-            Comprar
-          </button>
-*/

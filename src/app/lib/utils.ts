@@ -3,7 +3,6 @@ import { sql } from '@vercel/postgres';
 import { products } from "./placeholder-data";
 import { Product, ShoppingCart } from './definitions';
 import { v4 as uuidv4 } from 'uuid';
-import { useState } from 'react';
 import { DiscountedPrices } from './definitions';
 import { resolve } from 'path';
 
@@ -41,7 +40,7 @@ export async function addNewProduct(productData: ProductForm) {
 
 export async function fetchProducts() {
 
-  await new Promise((resolve) => setTimeout(resolve, 5000))
+  //await new Promise((resolve) => setTimeout(resolve, 5000))
 
   try {
     const result = await fetchLocalProducts(products);
@@ -90,8 +89,8 @@ function applyDiscounts(prices: DiscountedPrices): DiscountedPrices {
 
   prices.dozen *= 0.8; // Descuento del 20%
   prices.quarterHundred *= 0.75; // Descuento del 25%
-  prices.halfHundred *= 0.7; // Descuento del 30%
-  prices.hundred *= 0.6; // Descuento del 40%
+  prices.halfHundred *= 0.65; // Descuento del 30%
+  prices.hundred *= 0.60; // Descuento del 40%
 
   // Redondear los valores
   prices.dozen = Math.round(prices.dozen);
