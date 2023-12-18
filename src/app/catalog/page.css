@@ -1,0 +1,26 @@
+.catalog-container {
+  position: absolute;
+  width: 90vw;
+  max-height: 90vh;
+  /* Ajusta la altura máxima según sea necesario */
+  overflow-y: auto;
+  /* Añade una barra de desplazamiento vertical si es necesario */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  border-radius: 10px;
+
+  background: rgba(233, 233, 233, 0.82);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.2px);
+  -webkit-backdrop-filter: blur(5.2px);
+}
+
+@media screen and (min-width: 768px) {
+  .catalog-container{
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+  }
+}
