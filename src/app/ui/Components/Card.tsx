@@ -3,7 +3,9 @@ import { ProductResponse } from '@/app/lib/definitions';
 import { updateCartQuantity } from '@/app/lib/shoppingCart/ShoppingCart';
 import { CardSkeleton } from '../skeletons';
 import { fetchProducts } from '@/app/lib/utils';
-const Card = ( {
+import Image from 'next/image';
+
+const Card = ({
   UUID,
   name,
   description,
@@ -37,10 +39,13 @@ const Card = ( {
           </div>
         </div>
         <div className='mb-4'>
-          <img
+          <Image
             src={image_url}
-            alt="Placeholder Image"
+            alt={name}
             className="rounded mx-auto"
+            width={440}
+            height={440}
+            priority={true}
           />
         </div>
         <div className="flex justify-end">
@@ -49,6 +54,6 @@ const Card = ( {
     </Suspense>
   );
 };
-   
+
 
 export default Card;

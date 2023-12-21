@@ -87,7 +87,7 @@ async function calculatePrices(priceUnit: number): Promise<DiscountedPrices> {
 function applyDiscounts(prices: DiscountedPrices): DiscountedPrices {
   // Aplica descuentos a cada precio
 
-  prices.dozen *= 0.8; // Descuento del 20%
+  prices.dozen *= 0.9; // Descuento del 20%
   prices.quarterHundred *= 0.75; // Descuento del 25%
   prices.halfHundred *= 0.65; // Descuento del 30%
   prices.hundred *= 0.60; // Descuento del 40%
