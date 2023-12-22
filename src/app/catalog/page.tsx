@@ -42,7 +42,7 @@ export default async function Catalog() {
                 <div className='mb-4'>
                   <p className="text-center text-gray-700">
                     <strong>¡Atención!</strong> Este catálogo muestra actualmente solo los precios y no permite realizar compras directamente en línea.
-                    Te invitamos a ponerte en contacto con nuestro vendedor a través de WhatsApp para realizar tus pedidos.
+                    Te invitamos a ponerte en contacto con nuestro vendedor a través de WhatsApp o Messenger para realizar tus pedidos.
                     Estamos trabajando para implementar la funcionalidad de compra en línea próximamente. ¡Gracias por tu comprensión!
                   </p>
                 </div>

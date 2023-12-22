@@ -3,16 +3,22 @@
 import { Fragment, useState } from 'react';
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
-  ArrowPathIcon,
   Bars3Icon,
   ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
   XMarkIcon,
   AdjustmentsHorizontalIcon
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import 'swiper/css/effect-fade';
+import 'swiper/css/autoplay';
+import 'swiper/css/effect-fade';
+import 'swiper/css/grid';
 
 const products = [
   { name: 'Catalogo navideño', description: 'Mira los precios y las promociones que tenemos para ti', href: '/catalog', icon: ChartPieIcon },

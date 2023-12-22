@@ -1,7 +1,7 @@
 import "./Snow.css";
 
 export default function Snow() {
-  const snowValue: number = 50;
+  const snowValue: number = 15;
 
   return (
     <>
